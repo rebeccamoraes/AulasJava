@@ -21,7 +21,7 @@ public class Capflix {
 
         System.out.println("CAPFLIX - Filmes, Séries e Documentários");
 
-        System.out.println("Escolha uma das opções de cadastro:\n1 - Filmes \n2 - Séries \n3 - Documentários");
+        System.out.println("Escolha uma das opções de cadastro:\n1 - Filmes \n2 - Séries \n3 - Documentários \n4 - Sair");
 
         opcao = scanner.nextByte();
         scanner.nextLine();
@@ -61,7 +61,9 @@ public class Capflix {
                 tema = scanner.nextLine();
                 System.out.println("Documentário cadastrado com sucesso!");
                 break;
-
+            case 4:
+                System.out.println("Aplicação finalizada.");
+                break;
             default:
                 System.out.println("Opção inválida.");
         }
