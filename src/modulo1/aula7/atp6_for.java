@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class atp6_for {
     public static void main(String[] args) {
-        exercicio2();
+        exercicio3();
     }
 
     public static void exercicio1() {
@@ -85,5 +85,24 @@ public class atp6_for {
             }
         }
         return true;
+    }
+
+    /**
+     * Exercício 3
+     * Calcule o retorno total de um investimento de R$ 5.000,00
+     * durante 24 meses a uma taxa de juros de 2% ao mês.
+     * Utilize o laço FOR para imprimir o valor do retorno mês a mês.
+     */
+    public static void exercicio3() {
+        double investimento = 5000.00, juros = 0.02, retorno = 0;
+        int duracao = 24;
+
+        System.out.println("--- Exercício 3 - Juros ---");
+        for (int i = 1; i <=24; i++) {
+            retorno = investimento * juros;
+            System.out.printf("Retorno mês %d: %.2f\n", i, retorno);
+            investimento += retorno;
+        }
+
     }
 }
