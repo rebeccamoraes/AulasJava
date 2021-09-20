@@ -7,7 +7,39 @@ import java.util.Scanner;
  */
 public class atp6_for {
     public static void main(String[] args) {
-        exercicio3();
+        short exercicio = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        do {
+            System.out.println("\nEscolha um dos exercícios: ");
+            System.out.println("1 - Nome e sobrenome 10x");
+            System.out.println("2 - Pares e Primos");
+            System.out.println("3 - Juros compostos");
+            System.out.println("0 - Sair");
+            exercicio = scanner.nextShort();
+            scanner.nextLine();
+
+            switch (exercicio) {
+                case 1:
+                    exercicio1();
+                    break;
+
+                case 2:
+                    exercicio2();
+                    break;
+
+                case 3:
+                    exercicio3();
+                    break;
+
+                case 0:
+                    System.out.println("Aplicação finalizada.");
+                    break;
+
+                default:
+                    System.out.println("Valor inválido.");
+            }
+        } while (exercicio != 0);
     }
 
     public static void exercicio1() {
@@ -76,6 +108,8 @@ public class atp6_for {
                 }
             }
         */
+
+        System.out.println("\n--- Fim do exercício 2 ---");
     }
 
     public static boolean primo(int num) {
@@ -98,11 +132,15 @@ public class atp6_for {
         int duracao = 24;
 
         System.out.println("--- Exercício 3 - Juros ---");
-        for (int i = 1; i <=24; i++) {
+        for (int i = 1; i <= duracao; i++) {
             retorno = investimento * juros;
             System.out.printf("Retorno mês %d: %.2f\n", i, retorno);
             investimento += retorno;
         }
+
+        System.out.printf("Investimento + retorno total: %.2f\n", investimento);
+
+        System.out.println("\n--- Fim do exercício 3 ---");
 
     }
 }
