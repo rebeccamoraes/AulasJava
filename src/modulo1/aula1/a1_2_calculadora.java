@@ -1,3 +1,5 @@
+package modulo1.aula1;
+
 import java.util.Scanner;
 
 public class a1_2_calculadora {
