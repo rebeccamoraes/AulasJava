@@ -1,6 +1,6 @@
 package atp20;
 
-public class Coordenador {
+public class Coordenador extends Funcionario {
     private String cursoCoordenado;
     private double bonus;
 
