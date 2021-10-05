@@ -1,6 +1,6 @@
 package atp20;
 
-public class Funcionario {
+public class Funcionario extends Pessoa {
     private double salario;
     private String departament;
 
