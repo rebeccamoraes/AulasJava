@@ -5,10 +5,16 @@ package atp21;
  * 
  * 1. Crie uma classe Conta que deve possuir os atributos privados: saldo e código do cliente.
  * 2. Crie os métodos set e get para os atributos privados da classe Conta.
+ * 3. Crie um método transferência na classe Conta. 
+ *    O método deve receber um valor double e debitar do saldo da conta.
  */
 public class Conta {
     private double saldo;
     private String codigoCliente;
+
+    public void transferencia(double valor) {
+        this.saldo -= valor;
+    }
 
     public double getSaldo() {
         return saldo;
