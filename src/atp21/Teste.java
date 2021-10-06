@@ -6,6 +6,8 @@ package atp21;
  * 2. Utilize os métodos set para inserir os valores de saldo e de código de cliente para os dois objetos.
  * 3. Realize uma transferência em cada uma das contas.
  * 4. Imprima os dados de código de cliente, saldo e de saldo após a transferência, para cada objeto
+ * 5. Altere a classe Teste, para realizar mais de 5 transferências na Conta Corrente, 
+ *    antes de imprimir os resultados.
  */
 public class Teste {
     public static void main(String[] args) {
@@ -22,9 +24,11 @@ public class Teste {
         System.out.printf("Conta do cliente %s, saldo R$%.2f\n", conta.getCodigoCliente(), conta.getSaldo());
         System.out.printf("Conta Corrente do cliente %s, saldo R$%.2f\n", cc.getCodigoCliente(), cc.getSaldo());
 
-        conta.transferencia(500);
-        cc.transferencia(500);
-        System.out.println("Transferência de 500 reais realizada em cada conta.");
+        for (int i = 0; i < 5; i++) {
+            conta.transferencia(50);
+            cc.transferencia(50);
+            System.out.println("Transferência de 500 reais realizada em cada conta.");   
+        }
 
         System.out.println("\nSaldo depois das transferências");
         System.out.printf("Conta do cliente %s, saldo R$%.2f\n", conta.getCodigoCliente(), conta.getSaldo());
