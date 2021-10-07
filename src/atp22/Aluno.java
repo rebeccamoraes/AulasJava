@@ -5,6 +5,7 @@ package atp22;
  * 
  * 1. Crie uma classe Aluno com os atributos privados nome completo, idade e matricula.
  * 2. Crie os métodos getters e setters para cada atributo da classe Aluno.
+ * 3. Crie o método toString na classe Aluno, fazendo um override no método padrão da classe Object.
  */
 
 public class Aluno {
@@ -31,5 +32,11 @@ public class Aluno {
     }
     public void setMatricula(String matricula) {
         this.matricula = matricula;
+    }
+
+    @Override
+    public String toString() {
+        String texto = "Aluno: " + this.nomeCompleto + "\nIdade: " + this.idade + "\nMatrícula: " + this.matricula;
+        return texto;
     }
 }
