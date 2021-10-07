@@ -19,5 +19,10 @@ public class Calculadora {
         double resultado = valor1 + valor2;
         return resultado;
     }
-    
+
+    public float soma(float valor1, float valor2, float valor3) {
+        float resultado = valor1 + valor2;
+        return resultado;
+    }
+
 }
