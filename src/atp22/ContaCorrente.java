@@ -11,11 +11,19 @@ package atp22;
  */
 public class ContaCorrente {
     private double saldo;
-    private double taxaSaque;
+    private double taxaSaque = 5.00;
     private String codigoCliente;
 
     public ContaCorrente(double saldo, String codigoCliente) {
         this.saldo = saldo;
         this.codigoCliente = codigoCliente;
+    }
+
+    public void saque(double valor) {
+        this.saldo -= (valor + this.taxaSaque);
+    }
+
+    public void deposito(double valor) {
+        this.saldo += valor;
     }
 }
