@@ -25,4 +25,9 @@ public class Calculadora {
         return resultado;
     }
 
+    public long soma(long valor1, long valor2, long valor3) {
+        long resultado = valor1 + valor2;
+        return resultado;
+    }
+
 }
