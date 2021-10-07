@@ -36,7 +36,9 @@ public class Aluno {
 
     @Override
     public String toString() {
-        String texto = "Aluno: " + this.nomeCompleto + "\nIdade: " + this.idade + "\nMatrícula: " + this.matricula;
+        String texto = "Aluno(a): " + this.nomeCompleto 
+                     + "\nIdade: " + this.idade
+                     + "\nMatrícula: " + this.matricula + "\n";
         return texto;
     }
 }
