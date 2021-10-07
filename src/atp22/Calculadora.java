@@ -11,7 +11,13 @@ package atp22;
  */
 public class Calculadora {
     public int soma(int valor1, int valor2) {
-        int resultado = valor1 + valor2
+        int resultado = valor1 + valor2;
         return resultado;
     }
+
+    public double soma(double valor1, double valor2) {
+        double resultado = valor1 + valor2;
+        return resultado;
+    }
+    
 }
