@@ -21,12 +21,12 @@ public class Calculadora {
     }
 
     public float soma(float valor1, float valor2, float valor3) {
-        float resultado = valor1 + valor2;
+        float resultado = valor1 + valor2 + valor3;
         return resultado;
     }
 
     public long soma(long valor1, long valor2, long valor3) {
-        long resultado = valor1 + valor2;
+        long resultado = valor1 + valor2 + valor3;
         return resultado;
     }
 
