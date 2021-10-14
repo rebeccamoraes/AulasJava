@@ -29,4 +29,15 @@ public class LivrosController {
     public void delete(Livro livro) {
         this.livros.remove(livro);
     }
+
+    public Livro findById(int id) throws Exception {
+        for (int i = 0; i < livros.size(); i++) {
+            Livro livro = livros.get(i);
+
+            if(livro.getId() == id) {
+                return livro;
+            }
+        }
+        throw new Exception("Livro não encontrado.");
+    }
 }
