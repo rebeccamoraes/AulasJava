@@ -39,6 +39,21 @@ public class LivrosView {
 
     private static void cadastrar(LivrosController controller, Scanner scanner) {
         System.out.println("--------  Cadastro de livro  --------");
+
+        System.out.print("Título: ");
+        String titulo = scanner.nextLine();
+        
+        System.out.print("Autores: ");
+        String autores = scanner.nextLine();
+        
+        System.out.print("Editora: ");
+        String editora = scanner.nextLine();
+        
+        Livro livro = new Livro(titulo, autores, editora);
+
+        controller.create(livro);
+
+        System.out.println("Livro criado com sucesso!");      
     }
 
     private static void alterar(LivrosController controller, Scanner scanner) {
