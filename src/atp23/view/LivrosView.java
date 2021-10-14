@@ -58,6 +58,28 @@ public class LivrosView {
 
     private static void alterar(LivrosController controller, Scanner scanner) {
         System.out.println("--------  Alteração de livro  --------");
+
+        System.out.println("Informe o id do livro: ");
+        int id = Integer.parseInt(scanner.nextLine());
+
+        try {
+            Livro livro = controller.findById(id);
+            
+            System.out.printf("Novo título (%s): ", livro.getTitulo());
+            livro.setTitulo(scanner.nextLine());
+            
+            System.out.printf("Novos autores (%s): ", livro.getAutores());
+            livro.setAutores(scanner.nextLine());
+            
+            System.out.printf("Nova editora (%s): ", livro.getEditora());
+            livro.setEditora(scanner.nextLine());
+
+            controller.update(livro);
+
+            System.out.println("Livro alterado com sucesso!");
+        } catch(Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     private static void excluir(LivrosController controller, Scanner scanner) {
