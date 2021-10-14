@@ -59,7 +59,8 @@ public class Livro {
 
     @Override
     public String toString() {
-        String texto = "Título: " + this.titulo
+        String texto =  "Id: " + this.id
+                     + "\nTítulo: " + this.titulo
                      + "\nAutores: " + this.autores
                      + "\nEditora: " + this.editora + "\n";
         return texto;
