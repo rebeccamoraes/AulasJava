@@ -84,6 +84,18 @@ public class LivrosView {
 
     private static void excluir(LivrosController controller, Scanner scanner) {
         System.out.println("--------  Exclusão de livro  --------");
+        System.out.println("Informe o id do livro: ");
+        int id = Integer.parseInt(scanner.nextLine());
+
+        try {
+            Livro livro = controller.findById(id);
+            
+            controller.delete(livro);
+
+            System.out.println("Livro excluído com sucesso!");
+        } catch(Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     private static void listar(LivrosController controller) {
