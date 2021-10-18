@@ -5,6 +5,9 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
+| 24/09/2021 | Métodos e estruturas de repetição | [Atividade Prática 10](https://github.com/rebeccamoraes/java_atp10) |
+| 27/09/2021 | Revisão de estruturas de repetição |  [Atividade Prática 11](https://github.com/rebeccamoraes/java_atp11) |
+| 28/09/2021 | Métodos | [Atividade Prática em dupla 13 e 14](https://github.com/manuelatgkb/Java_atp13) |
 | 29/09/2021 | Orientação a objetos | [Atividade Prática 15](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp15) |
 | 30/09/2021 | Orientação a objetos e métodos | [Atividade Prática 16](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp16) |
 | 01/10/2021 | Orientação a objetos | [Atividade Prática 17](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp17) |
