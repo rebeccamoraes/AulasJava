@@ -9,6 +9,9 @@ package atp25;
  * 3. Crie um objeto da classe Object através da instância da classe Computador.
  * 4. Crie um objeto da classe Object através da instância da classe Notebook.
  * 5. Crie um objeto da classe Object através da instância da classe Desktop.
+ * 6. Converta o primeiro objeto da Object novamente para um novo objeto da classe Computador.
+ * 7. Converta o segundo objeto da Object novamente para um novo objeto da classe Notebook.
+ * 8. Converta o terceiro objeto da Object novamente para um novo objeto da classe Desktop.
  */
 public class Main {
     public static void main(String[] args) {
@@ -45,5 +48,13 @@ public class Main {
         //5. Crie um objeto da classe Object através da instância da classe Desktop.
         Object objDesktop = desktop;
 
+        //6. Converta o primeiro objeto da Object novamente para um novo objeto da classe Computador.
+        Computador pcObj = (Computador) objPC;
+
+        //7. Converta o segundo objeto da Object novamente para um novo objeto da classe Notebook.
+        Notebook noteObj = (Notebook) objNote;
+
+        //8. Converta o terceiro objeto da Object novamente para um novo objeto da classe Desktop.
+        Desktop deskObj = (Desktop) objDesktop;
     }
 }
