@@ -10,4 +10,12 @@ public class Notebook extends Computador {
     public String bateria;
     public String velocidadeWifi;
     public String versaoBluetooth;
+
+    @Override
+    public String toString() {
+        String texto = super.toString();
+        texto += "\nBateria: " + this.bateria + "\nVelocidade wifi: " + this.velocidadeWifi
+              + "\nVersão bluetooth: " + this.versaoBluetooth + "\n";
+        return texto;
+    }
 }
