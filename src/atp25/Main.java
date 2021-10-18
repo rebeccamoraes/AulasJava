@@ -12,6 +12,9 @@ package atp25;
  * 6. Converta o primeiro objeto da Object novamente para um novo objeto da classe Computador.
  * 7. Converta o segundo objeto da Object novamente para um novo objeto da classe Notebook.
  * 8. Converta o terceiro objeto da Object novamente para um novo objeto da classe Desktop.
+ * 9. Imprima todos dos dados do objeto de Computador convertido através do toString.
+ * 10. Imprima todos dos dados do objeto de Notebook convertido através do toString.
+ * 11. Imprima todos dos dados do objeto de Desktop convertido através do toString.
  */
 public class Main {
     public static void main(String[] args) {
@@ -56,5 +59,14 @@ public class Main {
 
         //8. Converta o terceiro objeto da Object novamente para um novo objeto da classe Desktop.
         Desktop deskObj = (Desktop) objDesktop;
+
+        //9. Imprima todos dos dados do objeto de Computador convertido através do toString.
+        System.out.printf("\n---- Computador ----\n%s", pcObj);
+
+        //10. Imprima todos dos dados do objeto de Notebook convertido através do toString.
+        System.out.printf("\n---- Notebook ----\n%s", noteObj);
+
+        //11. Imprima todos dos dados do objeto de Desktop convertido através do toString.
+        System.out.printf("\n---- Desktop ----\n%s", deskObj);
     }
 }
