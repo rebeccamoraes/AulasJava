@@ -9,4 +9,11 @@ public class Computador {
     public String memoriaRam;
     public String processador;
     public String discoRigido;
+
+    @Override
+    public String toString() {
+        String texto = "Marca: " + this.marca + "\nMemoria RAM: " + this.memoriaRam
+                     + "\nProcessador: " + this.processador + "\nDisco rígido: " + this.discoRigido;
+        return texto;
+    }
 }
