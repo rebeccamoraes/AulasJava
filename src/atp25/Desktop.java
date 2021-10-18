@@ -10,4 +10,13 @@ public class Desktop extends Computador {
     public double tamanhoGabinete;
     public String monitorExterno;
     public String fonte;
+
+    @Override
+    public String toString() {
+        String texto = super.toString();
+        texto += "Tamanho do gabinete: " + this.tamanhoGabinete
+              + "\nMonitor externo: " + this.monitorExterno
+              + "\nFonte: " + this.fonte + "\n";
+        return texto;
+    }
 }
