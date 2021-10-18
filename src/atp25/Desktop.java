@@ -7,7 +7,7 @@ package atp25;
  * tamanho gabinete, monitor externo e fonte.
  */
 public class Desktop extends Computador {
-    public double tamanhoGabinete;
+    public String tamanhoGabinete;
     public String monitorExterno;
     public String fonte;
 
