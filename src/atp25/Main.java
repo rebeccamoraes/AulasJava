@@ -9,7 +9,6 @@ package atp25;
  * 3. Crie um objeto da classe Object através da instância da classe Computador.
  * 4. Crie um objeto da classe Object através da instância da classe Notebook.
  * 5. Crie um objeto da classe Object através da instância da classe Desktop.
-
  */
 public class Main {
     public static void main(String[] args) {
@@ -36,5 +35,15 @@ public class Main {
         desktop.processador = "i7";
         desktop.fonte = "220v";
         desktop.tamanhoGabinete = "22\"";
+
+        //3. Crie um objeto da classe Object através da instância da classe Computador.
+        Object objPC = pc;
+        
+        //4. Crie um objeto da classe Object através da instância da classe Notebook.
+        Object objNote = note;
+
+        //5. Crie um objeto da classe Object através da instância da classe Desktop.
+        Object objDesktop = desktop;
+
     }
 }
