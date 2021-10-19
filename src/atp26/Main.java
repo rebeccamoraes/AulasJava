@@ -44,5 +44,22 @@ public class Main {
         //4. Verifique se o segundo objeto de pessoa já está salvo no array,utilizando o método da classe Dados.
         System.out.println(lista.contains(pessoa2)? "Pessoa2 está na lista.": "Pessoa2 não está na lista.");
 
+        System.out.println("**Lista antes de remover**");
+        imprimeArray(lista);
+
+        //5. Remova o aluno do array, utilizando o método da classe Dados.
+        lista.remove(aluno);
+
+        System.out.println("**Lista após remoção**");
+        imprimeArray(lista);
+        
+    }
+
+    private static void imprimeArray(Dados dados) {
+        Object[] lista = dados.read();
+        for (int i = 0; i < dados.length(); i++) {
+            //System.out.println(lista[i] instanceof Pessoa ? "---- Pessoa ----\n" : "---- Aluno ----\n");
+            System.out.println(lista[i]);
+        }
     }
 }
