@@ -5,6 +5,8 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
+| 19/10/2021 | Conversão, sobrescrita e arrays | [Atividade Prática 26](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp26) |
+| 19/10/2021 | Herança, conversão e sobrescrita | [Atividade Prática 25](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp25) |
 | 18/10/2021 | Herança e conversão de objetos | [Atividade Prática 24](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp24) e [Atividade Prática 25](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp25)|
 | 16/10/2021 | MVC | [Atividade Prática 23](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp23) |
 | 07/10/2021 | Sobrescrita, Sobrecarga e construtores | [Atividade Prática 22](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp22) |
