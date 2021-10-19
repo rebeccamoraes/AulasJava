@@ -1,7 +1,7 @@
 package atp26;
 
 /**
- * Atividade Prática 26 - 
+ * Atividade Prática 26 - Conversão, sobrescrita e arrays
  * 
  * 1. Crie uma classe Pessoa com os atributos públicos: nome, sobrenome e idade
  * 2. Crie uma sobrescrita do método equals para comparar os dados especificos da classe.
@@ -26,7 +26,7 @@ public class Pessoa {
     @Override
     public String toString() {
         String texto = "Nome: " + this.nome + " " + this.sobrenome
-                     + "\nIdade: " + this.idade;
+                     + "\nIdade: " + this.idade + "\n";
         return texto;        
     }
 }
