@@ -33,5 +33,16 @@ public class Main {
 
         lista.add(pessoa);
         lista.add(aluno);
+
+        //3. Crie um novo objeto para Pessoa e atribua os mesmos dados da pessoa criada anteriormente.
+        Pessoa pessoa2 = new Pessoa();
+
+        pessoa2.nome = "Rebecca";
+        pessoa2.sobrenome = "Moraes";
+        pessoa2.idade = 26;
+
+        //4. Verifique se o segundo objeto de pessoa já está salvo no array,utilizando o método da classe Dados.
+        System.out.println(lista.contains(pessoa2)? "Pessoa2 está na lista.": "Pessoa2 não está na lista.");
+
     }
 }
