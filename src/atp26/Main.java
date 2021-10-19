@@ -27,5 +27,11 @@ public class Main {
         aluno.matricula = "202101234";
         aluno.turma = "D2";
         aluno.curso = "Educação Infantil";
+
+        //2. Crie um objeto da classe Dados e chame o metodo para adicionar os objetos de Pessoa e Aluno ao array.
+        Dados lista = new Dados();
+
+        lista.add(pessoa);
+        lista.add(aluno);
     }
 }
