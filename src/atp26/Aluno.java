@@ -21,4 +21,13 @@ public class Aluno extends Pessoa {
                         && this.curso == aluno.curso;
         return ehIgual;
     }
+
+    @Override
+    public String toString() {
+        String texto = super.toString()
+                     + "Matrícula: " + this.matricula
+                     + "\nTurma: " + this.turma
+                     + "\nCurso: " + this.curso + "\n";
+        return texto;
+    }
 }
