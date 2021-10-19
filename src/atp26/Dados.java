@@ -9,6 +9,7 @@ package atp26;
  *    classe pessoa quanto objetos da classe Aluno. Caso o array já tenha todas as posições ocupadas, 
  *    deve ser adicionado mais 5 posições ao array.
  * 4. Crie um método para mostrar quantos elementos já foram adicionados ao array.
+ * 5. Crie um método para remover um elemento do array.
  */
 public class Dados {
     private Object[] lista;
@@ -37,6 +38,28 @@ public class Dados {
         lista[tamanhoAtual] = obj;
         
         tamanhoAtual++;
+    }
+
+    /**
+     * Remove elemento da lista
+     */
+    public void remove(Object obj) {
+        int posicao = indexOf(obj);
+
+        if(posicao >= 0) {
+            for (int i = posicao; i < this.tamanhoAtual-1; i++) {
+                lista[i] = lista[i+1];
+            }
+        }
+    }
+
+    private int indexOf(Object obj) {
+        for (int i = 0; i < this.tamanhoAtual; i++) {
+            if(lista[i].equals(obj)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     /**
