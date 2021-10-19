@@ -53,6 +53,10 @@ public class Dados {
         }
     }
 
+    /**
+     * Retorna o indice de um objeto da lista.
+     * Caso o objeto não esteja na lista, retorna -1;
+     */
     private int indexOf(Object obj) {
         for (int i = 0; i < this.tamanhoAtual; i++) {
             if(lista[i].equals(obj)) {
@@ -60,6 +64,15 @@ public class Dados {
             }
         }
         return -1;
+    }
+
+    /**
+     * Verifica se um objeto está contido na lista
+     * @param obj
+     * @return
+     */
+    public boolean contains(Object obj) {
+        return indexOf(obj) >= 0;
     }
 
     /**
