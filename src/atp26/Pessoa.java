@@ -5,6 +5,7 @@ package atp26;
  * 
  * 1. Crie uma classe Pessoa com os atributos públicos: nome, sobrenome e idade
  * 2. Crie uma sobrescrita do método equals para comparar os dados especificos da classe.
+ * 3. Crie uma sobrescrita do método toString para imprimir todos os dados.
  */
 public class Pessoa {
     public String nome;
@@ -20,5 +21,12 @@ public class Pessoa {
                         && this.idade == pessoa.idade);
 
         return ehIgual;
+    }
+
+    @Override
+    public String toString() {
+        String texto = "Nome: " + this.nome + " " + this.sobrenome
+                     + "\nIdade: " + this.idade;
+        return texto;        
     }
 }
