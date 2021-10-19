@@ -47,10 +47,12 @@ public class Dados {
         int posicao = indexOf(obj);
 
         if(posicao >= 0) {
-            for (int i = posicao; i < this.tamanhoAtual-1; i++) {
+            for (int i = posicao; i < this.lista.length-1; i++) {
                 lista[i] = lista[i+1];
             }
         }
+        
+        this.tamanhoAtual--;
     }
 
     /**
@@ -80,5 +82,12 @@ public class Dados {
      */
     public int length() {
         return this.tamanhoAtual;
+    }
+
+    /**
+     * Retorna a lista
+     */
+    public Object[] read() {
+        return this.lista;
     }
 }
