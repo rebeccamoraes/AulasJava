@@ -8,6 +8,7 @@ package atp26;
  * 3. Crie um método para adicionar elementos ao array e que permita receber tanto objetos da
  *    classe pessoa quanto objetos da classe Aluno. Caso o array já tenha todas as posições ocupadas, 
  *    deve ser adicionado mais 5 posições ao array.
+ * 4. Crie um método para mostrar quantos elementos já foram adicionados ao array.
  */
 public class Dados {
     private Object[] lista;
@@ -36,5 +37,12 @@ public class Dados {
         lista[tamanhoAtual] = obj;
         
         tamanhoAtual++;
+    }
+
+    /**
+     * Mostra quantos elementos já foram adicionados ao array.
+     */
+    public int length() {
+        return this.tamanhoAtual;
     }
 }
