@@ -13,13 +13,16 @@ public class Aluno extends Pessoa {
 
     @Override
     public boolean equals(Object obj) {
-        Aluno aluno = (Aluno) obj;
+        if (obj instanceof Aluno) {
+            Aluno aluno = (Aluno) obj;
 
-        boolean ehIgual = super.equals(obj)
-                        && this.matricula == aluno.matricula
-                        && this.turma == aluno.turma
-                        && this.curso == aluno.curso;
-        return ehIgual;
+            boolean ehIgual = super.equals(obj)
+                            && this.matricula == aluno.matricula
+                            && this.turma == aluno.turma
+                            && this.curso == aluno.curso;
+            return ehIgual;
+        }
+        return false;
     }
 
     @Override
