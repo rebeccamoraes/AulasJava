@@ -14,13 +14,14 @@ public class Pessoa {
 
     @Override
     public boolean equals(Object obj) {
-        Pessoa pessoa = (Pessoa) obj;
-
-        boolean ehIgual = (this.nome == pessoa.nome 
-                        && this.sobrenome == pessoa.sobrenome 
-                        && this.idade == pessoa.idade);
-
-        return ehIgual;
+        if(obj instanceof Pessoa) {
+            Pessoa pessoa = (Pessoa) obj;
+            boolean ehIgual = (this.nome == pessoa.nome 
+                            && this.sobrenome == pessoa.sobrenome 
+                            && this.idade == pessoa.idade);
+            return ehIgual;
+        }
+        return false;
     }
 
     @Override
