@@ -16,8 +16,8 @@ public class Pessoa {
     public boolean equals(Object obj) {
         if(obj instanceof Pessoa) {
             Pessoa pessoa = (Pessoa) obj;
-            boolean ehIgual = (this.nome == pessoa.nome 
-                            && this.sobrenome == pessoa.sobrenome 
+            boolean ehIgual = (this.nome.equals(pessoa.nome)
+                            && this.sobrenome.equals(pessoa.sobrenome)
                             && this.idade == pessoa.idade);
             return ehIgual;
         }
