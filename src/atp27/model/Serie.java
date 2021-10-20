@@ -4,6 +4,16 @@ public class Serie extends Base {
     public String titulo;
     public int temporadas;
 
+    public Serie() {
+        super();
+    }
+
+    public Serie(String titulo, int temporadas) {
+        super();
+        this.titulo = titulo;
+        this.temporadas = temporadas;
+    }
+
     @Override
     public String toString() {
         String texto = "---- Série ----"
