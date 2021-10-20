@@ -1,7 +1,6 @@
 package atp27.model;
 
-public class Serie {
-    public int id;
+public class Serie extends Base {
     public String titulo;
     public int temporadas;
 
@@ -10,7 +9,7 @@ public class Serie {
         String texto = "---- Série ----"
                      + "\nTítulo: " + this.titulo
                      + "\nTemporadas: " + this.temporadas
-                     + "\nId: " + this.id;
+                     + "\nId: " + this.getId();
         return texto;
     }
 
@@ -18,7 +17,7 @@ public class Serie {
     public boolean equals(Object obj) {
         if(obj instanceof Serie) {
             Serie outraSerie = (Serie) obj;
-            return this.id == outraSerie.id;
+            return this.getId() == outraSerie.getId();
         }
         return false;
     }
