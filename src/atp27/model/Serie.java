@@ -16,7 +16,7 @@ public class Serie extends Base {
 
     @Override
     public String toString() {
-        String texto = "---- Série ----"
+        String texto = "\n---- Série ----"
                      + "\nTítulo: " + this.titulo
                      + "\nTemporadas: " + this.temporadas
                      + "\nId: " + this.getId();

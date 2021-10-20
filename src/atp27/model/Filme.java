@@ -16,7 +16,7 @@ public class Filme  extends Base {
 
     @Override
     public String toString() {
-        String texto = "---- Filme ----"
+        String texto = "\n---- Filme ----"
                      + "\nTítulo: " + this.titulo
                      + "\nAno: " + this.ano
                      + "\nId: " + this.getId();
