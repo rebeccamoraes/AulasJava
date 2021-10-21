@@ -22,4 +22,11 @@ public class BaseController<T> {
     public void create(T item) {
         this.lista.add(item);
     }
+
+    /**
+     * Retorna a lista
+     */
+    public ArrayList<T> read() {
+        return this.lista;
+    }
 }
