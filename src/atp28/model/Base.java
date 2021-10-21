@@ -13,4 +13,13 @@ public abstract class Base {
     public int getId() {
         return id;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Base) {
+            Base outro = (Base) obj;
+            return this.id == outro.id;
+        }
+        return false;
+    }
 }
