@@ -29,4 +29,17 @@ public class BaseController<T> {
     public ArrayList<T> read() {
         return this.lista;
     }
+
+    /**
+     * Atualiza atributos de item da lista
+     * @param item objeto a ser atualizado
+     */
+    public void update(T item) {
+        if(lista.contains(item)) {
+            this.lista.remove(item);
+            this.lista.add(item);
+        } else {
+            System.err.println("Item não encontrado");
+        }
+    }
 }
