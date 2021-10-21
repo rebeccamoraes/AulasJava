@@ -1,9 +1,8 @@
 package atp28.model;
 
-public class PessoaFisica extends Base {
+public class PessoaFisica extends Pessoa {
     public String nome;
     public String cpf;
-    public Endereco endereco;
 
     public PessoaFisica() {
         super();
