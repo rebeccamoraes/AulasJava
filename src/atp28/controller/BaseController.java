@@ -42,4 +42,16 @@ public class BaseController<T> {
             System.err.println("Item não encontrado");
         }
     }
+
+    /**
+     * Remove item da lista
+     * @param item objeto a ser removido
+     */
+    public void delete(T item) {
+        if(lista.contains(item)) {
+            this.lista.remove(item);
+        } else {
+            System.err.println("Item não encontrado");
+        }
+    }
 }
