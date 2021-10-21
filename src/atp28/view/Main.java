@@ -1,8 +1,10 @@
 package atp28.view;
 
 import atp28.controller.PessoaFisicaController;
+import atp28.controller.PessoaJuridicaController;
 import atp28.model.Endereco;
 import atp28.model.PessoaFisica;
+import atp28.model.PessoaJuridica;
 
 /**
  * Teste de CRUDs dos controllers de PessoaFísica e PessoaJurídica
@@ -10,6 +12,7 @@ import atp28.model.PessoaFisica;
 public class Main {
     public static void main(String[] args) {
         testaPessoaFisicaController();
+        testaPessoaJuridicaController();
     }
 
     /**
@@ -45,6 +48,42 @@ public class Main {
         System.out.println("--- Após delete ---");
         for (PessoaFisica pf : pessoas.read()) {
             System.out.println(pf);
+        }
+    }
+
+    /**
+     * Testa CRUD do PessoaJuridicaController
+     */
+    private static void testaPessoaJuridicaController() {
+        PessoaJuridicaController pessoas = new PessoaJuridicaController();
+
+        //CREATE
+        Endereco endereco = new Endereco("Av. Brasil", "1.776", "Quadra 8", "Bonsucesso", "Rio de Janeiro", "RJ", "23456-123");
+        PessoaJuridica pessoa = new PessoaJuridica("Bradesco", "60.697.021/0001-30", endereco);
+
+        pessoas.create(pessoa);
+        endereco = new Endereco("Rua 1009", "9.743", "Torre 1", "Águas Claras", "Brasília", "DF", "11222-123");
+        pessoas.create(new PessoaJuridica("Capgemini", "63.624.700/0001-77", endereco));
+
+        //READ
+        for (PessoaJuridica pj : pessoas.read()) {
+            System.out.println(pj);
+        }
+
+        //UPDATE
+        pessoa.endereco.logradouro = "Rua Porto Alegre";
+        pessoa.razaoSocial = "Banco do Brasil";
+
+        System.out.println("--- Após update ---");
+        for (PessoaJuridica pj : pessoas.read()) {
+            System.out.println(pj);
+        }
+
+        //DELETE
+        pessoas.delete(pessoa);
+        System.out.println("--- Após delete ---");
+        for (PessoaJuridica pj : pessoas.read()) {
+            System.out.println(pj);
         }
     }
 }
