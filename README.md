@@ -5,6 +5,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
+| 22/10/2021 | Herança e Composição | [Atividade Prática 29](https://github.com/rebeccamoraes/java_atp29) |
 | 21/10/2021 | MVC, Generics e Composição |  [Atividade Prática 28](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp28) |
 | 20/10/2021 | MVC e Generics |  [Atividade Prática 27](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp27) |
 | 19/10/2021 | Conversão, sobrescrita e arrays | [Atividade Prática 26](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp26) |
