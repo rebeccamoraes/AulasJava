@@ -49,6 +49,6 @@ public class Calculadora {
         if(divisor == 0) {
             throw new ArithmeticException("Divisão por 0 não é permitida.");
         }
-        return dividendo / divisor;
+        return (double)dividendo / (double)divisor;
     }   
 }
