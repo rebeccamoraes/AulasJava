@@ -5,8 +5,8 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
-| 26/10/2021 | Revisão de herança, composição, sobrescrita, construtores e generics | [Atividade Prática 31](https://github.com/rebeccamoraes/java_atp31) |
-| 25/10/2021 | Tratamento de exceções | [Atividade Prática 30](https://github.com/rebeccamoraes/java_atp30) |
+| 26/10/2021 | Revisão de herança, composição, sobrescrita, construtores e generics | [Atividade Prática 31](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp31) |
+| 25/10/2021 | Tratamento de exceções | [Atividade Prática 30](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp30) |
 | 22/10/2021 | Herança e Composição | [Atividade Prática 29](https://github.com/rebeccamoraes/java_atp29) |
 | 21/10/2021 | MVC, Generics e Composição |  [Atividade Prática 28](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp28) |
 | 20/10/2021 | MVC e Generics |  [Atividade Prática 27](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp27) |
