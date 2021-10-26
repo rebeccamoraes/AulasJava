@@ -62,6 +62,10 @@ public class Produto extends Base {
         this.categoria = categoria;
     }
 
+    public void setCategoria(String categoria) {
+        this.categoria.setDescricao(categoria);;
+    }
+
     @Override
     public String toString() {
         String texto = String.format("---- Produto ---- \nID: %d\nNome: %s\nDescrição: %s\nPreço: R$%.2f\n%s", 
