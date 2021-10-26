@@ -15,22 +15,18 @@ public class Main {
 
             switch(opcao) {
                 case 1:
-                    System.out.println("---- Cadastro de produto ----");
                     create(scanner, controller);
                     break;
                 
                 case 2:
-                    System.out.println("---- Atualização de produto ----");
                     update(scanner, controller);
                     break;
 
                 case 3:
-                    System.out.println("---- Exclusão de produto ----");
                     delete(scanner, controller);
                     break;
                 
                 case 4:
-                    System.out.println("---- Lista de produtos ----");
                     list(controller);
                     break;
             }
@@ -78,6 +74,8 @@ public class Main {
 
     
     private static void create(Scanner scanner, ProdutosController controller) {
+        System.out.println("---- Cadastro de produto ----");
+
         Produto produto = new Produto();
         
         System.out.print("Nome: ");
@@ -92,12 +90,14 @@ public class Main {
     }
     
     private static void list(ProdutosController controller) {
+        System.out.println("---- Lista de produtos ----");
         for (Produto produto : controller.read()) {
             System.out.println(produto);
         }
     }
 
     private static void update(Scanner scanner, ProdutosController controller) {
+        System.out.println("---- Atualização de produto ----");
         try {
             int id = lerInteiro(scanner, "Id: ");
             Produto produto = (controller.findById(id));
@@ -119,6 +119,7 @@ public class Main {
     }
 
     private static void delete(Scanner scanner, ProdutosController controller) {
+        System.out.println("---- Exclusão de produto ----");
         try {
             int id = lerInteiro(scanner, "Id: ");
 
