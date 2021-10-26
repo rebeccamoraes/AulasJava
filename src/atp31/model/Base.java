@@ -17,6 +17,10 @@ public abstract class Base {
         return gerador.nextInt(1000);
     }
 
+    public int getId() {
+        return id;
+    }
+    
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Base) {
