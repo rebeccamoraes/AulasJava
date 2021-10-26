@@ -5,7 +5,7 @@ import java.util.Scanner;
 import atp31.controller.ProdutosController;
 import atp31.model.Produto;
 
-public class Main {
+public class ProdutosView {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ProdutosController controller = new ProdutosController();
