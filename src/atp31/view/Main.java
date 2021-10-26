@@ -21,6 +21,7 @@ public class Main {
                 
                 case 2:
                     System.out.println("---- Atualização de produto ----");
+                    update(scanner, controller);
                     break;
 
                 case 3:
@@ -89,6 +90,33 @@ public class Main {
         controller.create(produto);
     }
     
+    private static void list(ProdutosController controller) {
+        for (Produto produto : controller.read()) {
+            System.out.println(produto);
+        }
+    }
+
+    private static void update(Scanner scanner, ProdutosController controller) {
+        try {
+            int id = lerInteiro(scanner, "Id: ");
+            Produto produto = (controller.findById(id));
+
+            System.out.print("Nome: ");
+            produto.setNome(scanner.nextLine());
+            System.out.print("Descrição: ");
+            produto.setDescricao(scanner.nextLine());
+            produto.setPreco(lerDouble(scanner, "Preço: "));
+            System.out.print("Categoria: ");
+            produto.setCategoria(scanner.nextLine());
+
+            controller.update(produto);
+
+            System.out.println("Produto atualizado com sucesso.");
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
+    
     private static int lerInteiro(Scanner scanner, String mensagem) {
         boolean numeroInvalido = false;
         int numero = 0;
@@ -119,11 +147,5 @@ public class Main {
             }
         } while (numeroInvalido);
         return numero;
-    }
-
-    private static void list(ProdutosController controller) {
-        for (Produto produto : controller.read()) {
-            System.out.println(produto);
-        }
     }
 }
