@@ -54,7 +54,7 @@ public class BaseController<T> {
      */
     public void delete(T item) {
         if(this.lista.contains(item)) {
-            delete(item);
+            this.lista.remove(item);
         } else {
             String tipo = item.getClass().getName();
             throw new IllegalArgumentException(tipo + " não encontrado. Id inválido.");
