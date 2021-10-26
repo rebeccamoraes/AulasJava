@@ -26,6 +26,7 @@ public class Main {
 
                 case 3:
                     System.out.println("---- Exclusão de produto ----");
+                    delete(scanner, controller);
                     break;
                 
                 case 4:
@@ -112,6 +113,20 @@ public class Main {
             controller.update(produto);
 
             System.out.println("Produto atualizado com sucesso.");
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    private static void delete(Scanner scanner, ProdutosController controller) {
+        try {
+            int id = lerInteiro(scanner, "Id: ");
+
+            Produto produto = (controller.findById(id));
+
+            controller.delete(produto);
+
+            System.out.println("Produto excluído com sucesso.");
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
