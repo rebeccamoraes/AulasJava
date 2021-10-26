@@ -2,9 +2,13 @@ package atp31.view;
 
 import java.util.Scanner;
 
+import atp31.controller.ProdutosController;
+import atp31.model.Produto;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        ProdutosController controller = new ProdutosController();
 
         do {
             int opcao = menu(scanner);
@@ -12,6 +16,7 @@ public class Main {
             switch(opcao) {
                 case 1:
                     System.out.println("---- Cadastro de produto ----");
+                    create(scanner, controller);
                     break;
                 
                 case 2:
@@ -24,9 +29,12 @@ public class Main {
                 
                 case 4:
                     System.out.println("---- Lista de produtos ----");
+                    list(controller);
                     break;
             }
         } while(voltarAoMenu(scanner));
+
+        scanner.close();
     }
 
     /**
@@ -66,6 +74,21 @@ public class Main {
         return resposta == 'S';
     }
 
+    
+    private static void create(Scanner scanner, ProdutosController controller) {
+        Produto produto = new Produto();
+        
+        System.out.print("Nome: ");
+        produto.setNome(scanner.nextLine());
+        System.out.print("Descrição: ");
+        produto.setDescricao(scanner.nextLine());
+        produto.setPreco(lerDouble(scanner, "Preço: "));
+        System.out.print("Categoria: ");
+        produto.setCategoria(scanner.nextLine());
+
+        controller.create(produto);
+    }
+    
     private static int lerInteiro(Scanner scanner, String mensagem) {
         boolean numeroInvalido = false;
         int numero = 0;
@@ -80,5 +103,27 @@ public class Main {
             }
         } while (numeroInvalido);
         return numero;
+    }
+
+    private static double lerDouble(Scanner scanner, String mensagem) {
+        boolean numeroInvalido = false;
+        double numero = 0;
+        do {
+            try {
+                System.out.print(mensagem);
+                numero = Double.parseDouble(scanner.nextLine());
+                numeroInvalido = false; 
+            } catch (NumberFormatException e) {
+                System.out.println("Erro. Valor informado não é um número.");
+                numeroInvalido = true;
+            }
+        } while (numeroInvalido);
+        return numero;
+    }
+
+    private static void list(ProdutosController controller) {
+        for (Produto produto : controller.read()) {
+            System.out.println(produto);
+        }
     }
 }
