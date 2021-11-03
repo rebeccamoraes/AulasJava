@@ -60,6 +60,7 @@ public class a9_1_metodos {
 
         System.out.print(mensagem);
         double numero = Double.parseDouble(scanner.nextLine());
+        scanner.close();
         return numero;
     }
 
