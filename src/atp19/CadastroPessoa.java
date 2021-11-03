@@ -37,6 +37,8 @@ public class CadastroPessoa {
             pessoas[i].setCodigo(scanner.nextLine());
         }
 
+        scanner.close();
+
     System.out.println("---- Pessoas cadastradas ----");
         for (PessoaFisica pessoa : pessoas) {
             System.out.printf("\n%s %s, %d anos, CPF %s, RG %s, Código %s",
