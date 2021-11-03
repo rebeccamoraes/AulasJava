@@ -35,6 +35,14 @@ public abstract class Base {
     }
     
     /**
+     * Define um novo valor para id
+     * @param id novo id inteiro
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
      * Compara dois objetos com base no id
      * 
      * @return true se os ids são iguais ou false caso contrário.
