@@ -58,4 +58,10 @@ public class Prato extends Base {
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    @Override
+    public String toString() {
+        String texto = String.format("Prato: %s\nValor: R$%.2f\nId: %d\n", this.nome, this.valor, this.getId());
+        return texto;
+    }
 }
