@@ -7,20 +7,22 @@ public class Principal {
         CalculadoraTaxas calculadora = new CalculadoraTaxas();        
         double taxa = 0, valor = 0;
         short opcao = 0;
+        
+        Scanner scanner = new Scanner(System.in);
 
         do {
-            opcao = menu();
+            opcao = menu(scanner);
             switch(opcao) {
                 case 1:
                     System.out.println("---- Transferência ----");
-                    valor = lerDouble("Informe o valor: ");
+                    valor = lerDouble("Informe o valor: ", scanner);
                     taxa = calculadora.calculaTaxaTransferencia(valor);
                     System.out.printf("Taxa da transferência: R$%.2f\n", taxa);
                     break;
     
                 case 2:
                     System.out.println("---- Saque ----");
-                    valor = lerDouble("Informe o valor: ");
+                    valor = lerDouble("Informe o valor: ", scanner);
                     taxa = calculadora.calculaTaxaSaque(valor);
                     System.out.printf("Taxa do saque: R$%.2f\n", taxa);
                     System.out.printf("Saques realizados: %d", calculadora.getSaquesRealizados());
@@ -30,13 +32,12 @@ public class Principal {
                     System.out.println("Aplicação finalizada.");
                     break;
             }       
-        } while(voltarAoMenu());
+        } while(voltarAoMenu(scanner));
            
-        
+        scanner.close();
     }
 
-    static short menu() {
-        Scanner scanner = new Scanner(System.in);
+    static short menu(Scanner scanner) {
         short opcao = 0;
         boolean valorInvalido = false;
 
@@ -60,13 +61,7 @@ public class Principal {
         return opcao;
     }
 
-    static void menuHandler(short opcao) {
-
-        
-    }
-
-    static boolean voltarAoMenu() {
-        Scanner scanner = new Scanner(System.in);
+    static boolean voltarAoMenu(Scanner scanner) {
         char resposta = ' ';
 
         System.out.println("\nDeseja voltar ao menu? (S\\N)");
@@ -75,8 +70,7 @@ public class Principal {
         return resposta == 'S';
     }
 
-    static double lerDouble(String mensagem) {
-        Scanner scanner = new Scanner(System.in);
+    static double lerDouble(String mensagem, Scanner scanner) {
         double valor = 0;
         
         System.out.print("Informe o valor: ");
