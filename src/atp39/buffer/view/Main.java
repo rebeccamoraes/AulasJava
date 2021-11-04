@@ -1,5 +1,6 @@
 package atp39.buffer.view;
 
+import atp39.buffer.controller.EscritaArquivo;
 import atp39.buffer.controller.LeituraTerminal;
 
 public class Main {
@@ -8,6 +9,8 @@ public class Main {
         System.out.println("Digite o texto abaixo, para sair insira q e aperte 'enter':");
 
         String texto = leitor.ler();
-        System.out.println("Texto inserido: \n" + texto);
+        
+        EscritaArquivo escritor = new EscritaArquivo("./src/atp39/buffer/dados/teste-escrita.txt");
+        escritor.escrever(texto);
     }
 }
