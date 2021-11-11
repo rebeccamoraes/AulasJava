@@ -2,7 +2,9 @@ package modulo7.aula45.view;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class View {
     public static void main(String[] args) {
@@ -19,9 +21,24 @@ public class View {
         
         try {
             Connection conn = DriverManager.getConnection(connectionString, user, pwd);
+
+            Statement statement = conn.createStatement();
+
+            statement.execute("SELECT * FROM produto");
+
+            ResultSet rs = statement.getResultSet();
+
+            while(rs.next()) {
+                int id = rs.getInt("id");
+                String nome = rs.getString("nome");
+                String descricao = rs.getString("descricao");
+                System.out.printf("%d  - %s : %s\n", id, nome, descricao);
+            }
+
             conn.close();
         } catch (SQLException e) {
-            System.out.println("Não foi possível se conectar.");
+            //System.out.println("Não foi possível se conectar.");
+            e.printStackTrace();
         }
 
     }
