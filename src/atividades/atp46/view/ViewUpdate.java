@@ -15,7 +15,7 @@ public class ViewUpdate {
             Connection conn = DriverManager.getConnection(url, user, password);
 
             Statement statement = conn.createStatement();
-            String sql = "UPDATE produto SET descricao='intel core i5' WHERE id = 17";
+            String sql = "UPDATE produto SET descricao='indisponível' WHERE id_categoria = 4";
             statement.execute(sql);
 
             int linhasAfetadas = statement.getUpdateCount();
