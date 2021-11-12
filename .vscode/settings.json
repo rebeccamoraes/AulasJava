@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\rmoraes\\OneDrive - Capgemini\\Documents\\Academia\\AtitivadesJava\\postgresql-42.3.1.jar",
+        "c:\\Users\\rmoraes\\OneDrive - Capgemini\\Documents\\Academia\\AtitivadesJava\\c3p0-0.9.5.5.jar"
+    ]
+}
