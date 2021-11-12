@@ -4,8 +4,8 @@ public class Categoria {
     private int id;
     private String nome;
 
-    public Categoria(int id) {
-        this.id = id;
+    public Categoria(String nome) {
+        this.nome = nome;
     }    
 
     public Categoria(int id, String nome) {
@@ -25,5 +25,11 @@ public class Categoria {
     }
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        String texto = String.format("%s (%d)", this.nome, this.id);
+        return texto;
     }
 }
