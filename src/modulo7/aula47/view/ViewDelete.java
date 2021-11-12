@@ -5,10 +5,10 @@ import java.sql.PreparedStatement;
 
 import modulo7.aula47.utils.ConnectionFactory;
 
-public class View1 {
+public class ViewDelete {
     public static void main(String[] args) {
         try (Connection conn = new ConnectionFactory().getConnection()) {
-            int idDeletado = 27;
+            int idDeletado = 10;
 
             String sql = "DELETE FROM categoria WHERE id = ?";
 
