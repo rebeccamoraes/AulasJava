@@ -1,4 +1,4 @@
-package atividades.atp46.view;
+package atividades.modulo8.atp46.view;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
