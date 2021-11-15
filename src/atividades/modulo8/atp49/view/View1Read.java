@@ -1,19 +1,16 @@
 package atividades.modulo8.atp49.view;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import aulas.modulo7.aula47.utils.ConnectionFactory;
+
 public class View1Read {
     public static void main(String[] args) {
         try {
-            String url = "jdbc:postgresql://localhost:5432/postgres";
-            String user = "postgres";
-            String password = "123456";
-            
-            Connection conn = DriverManager.getConnection(url, user, password);
+            Connection conn = new ConnectionFactory().getConnection();
 
             String sql = "SELECT id, nome FROM categoria";
 

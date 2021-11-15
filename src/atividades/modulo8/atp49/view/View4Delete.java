@@ -1,22 +1,19 @@
 package atividades.modulo8.atp49.view;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import atividades.modulo8.atp49.utils.ConnectionFactory;
 
 public class View4Delete {
     public static void main(String[] args) {
         try {
-            String url = "jdbc:postgresql://localhost:5432/postgres";
-            String user = "postgres";
-            String password = "123456";
-            
-            Connection conn = DriverManager.getConnection(url, user, password);
+            Connection conn = new ConnectionFactory().getConnection();
 
             String sql = "DELETE FROM categoria WHERE id = ?";
             PreparedStatement pStatement = conn.prepareStatement(sql);
-            int id = 18;
+            int id = 20;
             pStatement.setInt(1, id);
             pStatement.execute();
 
