@@ -1,4 +1,4 @@
-package atp23.model;
+package atividades.atp23.model;
 
 import java.util.Random;
 

@@ -1,10 +1,10 @@
-package atp23.view;
+package atividades.atp23.view;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import atp23.controller.LivrosController;
-import atp23.model.Livro;
+import atividades.atp23.controller.LivrosController;
+import atividades.atp23.model.Livro;
 
 public class LivrosView {
     public static void main(String[] args) {

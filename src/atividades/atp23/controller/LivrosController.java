@@ -1,8 +1,8 @@
-package atp23.controller;
+package atividades.atp23.controller;
 
 import java.util.ArrayList;
 
-import atp23.model.Livro;
+import atividades.atp23.model.Livro;
 
 public class LivrosController {
     private ArrayList<Livro> livros;

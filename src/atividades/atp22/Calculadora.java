@@ -1,4 +1,4 @@
-package atp22;
+package atividades.atp22;
 
 /**
  * Atividade Prática 22 - Sobrecarga, Sobrescrita e Construtores

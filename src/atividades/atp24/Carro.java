@@ -1,4 +1,4 @@
-package atp24;
+package atividades.atp24;
 
 /**
  * Atividade Prática 24 - Herança e conversão de objetos

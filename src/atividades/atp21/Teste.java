@@ -1,4 +1,4 @@
-package atp21;
+package atividades.atp21;
 
 /**
  * Atividade Prática 21

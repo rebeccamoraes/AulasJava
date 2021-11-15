@@ -1,4 +1,4 @@
-package atp25;
+package atividades.atp25;
 
 /**
  * Atividade Prática 25 - Herança, conversão e sobrescrita
