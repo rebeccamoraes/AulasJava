@@ -1,7 +1,6 @@
 package atividades.modulo8.atp49.utils;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import javax.sql.DataSource;
