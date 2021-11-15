@@ -5,7 +5,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
-| 11/11/2021 | Biblioteca JDBC | [Atividade Prática 46](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp46) |
+| 11/11/2021 | Biblioteca JDBC | [Atividade Prática 46](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp46) e [Atividade Prática 47](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp47)|
 | 03/11/2021 | Java.io, leitura e escrita de arquivos | [Atividade Prática 38](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp38) |
 | 03/11/2021 | Revisão | [Atividade Prática 37](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp37) |
 | 26/10/2021 | Revisão de herança, composição, sobrescrita, construtores e generics | [Atividade Prática 31](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp31) |
