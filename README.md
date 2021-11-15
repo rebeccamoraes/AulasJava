@@ -5,7 +5,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
-| 11/11/2021 | Biblioteca JDBC | [Atividade Prática 46](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp46) |
+| 11/11/2021 | Biblioteca JDBC | [Atividade Prática 46](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp46) |
 | 03/11/2021 | Java.io, leitura e escrita de arquivos | [Atividade Prática 38](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp38) |
 | 03/11/2021 | Revisão | [Atividade Prática 37](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp37) |
 | 26/10/2021 | Revisão de herança, composição, sobrescrita, construtores e generics | [Atividade Prática 31](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp31) |
@@ -24,7 +24,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 | 04/10/2021 | Orientação a Objetos | [Atividade Prática 18](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp18) |
 | 01/10/2021 | Orientação a objetos | [Atividade Prática 17](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp17) |
 | 30/09/2021 | Orientação a objetos e métodos | [Atividade Prática 16](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp16) |
-| 29/09/2021 | Orientação a objetos | [Atividade Prática 15](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atp15atividades/) |
+| 29/09/2021 | Orientação a objetos | [Atividade Prática 15](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp15) |
 | 28/09/2021 | Métodos | [Atividade Prática em dupla 13 e 14](https://github.com/manuelatgkb/Java_atp13) |
 | 27/09/2021 | Revisão de estruturas de repetição |  [Atividade Prática 11](https://github.com/rebeccamoraes/java_atp11) |
 | 24/09/2021 | Métodos e estruturas de repetição | [Atividade Prática 10](https://github.com/rebeccamoraes/java_atp10) |
