@@ -9,9 +9,7 @@ import aulas.modulo7.aula47.utils.ConnectionFactory;
 
 public class View1Read {
     public static void main(String[] args) {
-        try {
-            Connection conn = new ConnectionFactory().getConnection();
-
+        try (Connection conn = new ConnectionFactory().getConnection()) {
             String sql = "SELECT id, nome FROM categoria";
 
             PreparedStatement pStatement = conn.prepareStatement(sql);

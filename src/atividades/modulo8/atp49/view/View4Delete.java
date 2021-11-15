@@ -8,9 +8,7 @@ import atividades.modulo8.atp49.utils.ConnectionFactory;
 
 public class View4Delete {
     public static void main(String[] args) {
-        try {
-            Connection conn = new ConnectionFactory().getConnection();
-
+        try (Connection conn = new ConnectionFactory().getConnection()) {
             String sql = "DELETE FROM categoria WHERE id = ?";
             PreparedStatement pStatement = conn.prepareStatement(sql);
             int id = 20;

@@ -8,9 +8,7 @@ import atividades.modulo8.atp49.utils.ConnectionFactory;
 
 public class View3Update {
     public static void main(String[] args) {
-        try {
-            Connection conn = new ConnectionFactory().getConnection();
-
+        try (Connection conn = new ConnectionFactory().getConnection()) {
             String sql = "UPDATE categoria SET nome= ? WHERE nome = ?";
             PreparedStatement pStatement = conn.prepareStatement(sql);
             String nomeAntigo = "Alimentos";
