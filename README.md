@@ -9,7 +9,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 | 12/11/2021 | Design Patern Factory | [Atividade Prática 49](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp49) |
 | 12/11/2021 | PreparedStatement | [Atividade Prática 48](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp48) |
 | 11/11/2021 | Biblioteca JDBC | [Atividade Prática 46](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp46) e [Atividade Prática 47](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp47)|
-| 03/11/2021 | Java.io, leitura e escrita de arquivos | [Atividade Prática 38](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp38) |
+| 03/11/2021 | Java.io, leitura e escrita de arquivos | [Atividade Prática 38](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp38) e [Atividade Prática 39](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp39) |
 | 03/11/2021 | Revisão | [Atividade Prática 37](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp37) |
 | 26/10/2021 | Revisão de herança, composição, sobrescrita, construtores e generics | [Atividade Prática 31](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp31) |
 | 25/10/2021 | Tratamento de exceções | [Atividade Prática 30](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp30) |
