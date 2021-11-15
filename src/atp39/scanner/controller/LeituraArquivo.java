@@ -9,20 +9,31 @@ import java.util.Scanner;
  */
 public class LeituraArquivo {
     private Scanner scanner;
+    private String fileName;
 
     public LeituraArquivo(String nomeArquivo) {
-        try {
-            this.scanner = new Scanner(new File(nomeArquivo));
-        } catch (FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado ou sem permissão para escrita.");
-        }
+        this.fileName = nomeArquivo;
     }
 
     public String ler() {
         String texto = "";
-        while(scanner.hasNextLine()) {
-            texto += scanner.nextLine() + "\n";
+
+        if(this.abreArquivo()) {
+            while(scanner.hasNextLine()) {
+                texto += scanner.nextLine() + "\n";
+            }
         }
+        
         return texto;
+    }
+
+    private boolean abreArquivo() {
+        try {
+            this.scanner = new Scanner(new File(this.fileName));
+            return true;
+        } catch (FileNotFoundException e) {
+            System.out.println("Arquivo não encontrado ou sem permissão para escrita.");
+            return false;
+        }
     }
 }

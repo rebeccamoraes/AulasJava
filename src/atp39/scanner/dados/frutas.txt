@@ -10,3 +10,6 @@ Limao
 Melancia
 Peta
 Uva
+Cereja
+Pessego
+Ameixa
