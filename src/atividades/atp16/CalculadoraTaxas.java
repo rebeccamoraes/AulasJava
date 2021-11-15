@@ -1,4 +1,4 @@
-package atp16;
+package atividades.atp16;
 
 /**
  * Atividade Prática 16 - CalculadoraTaxas 

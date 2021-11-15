@@ -1,4 +1,4 @@
-package atp18;
+package atividades.atp18;
 
 /**
  * Atividade Prática 18 - Orientação à Objetos

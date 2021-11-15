@@ -1,4 +1,4 @@
-package atp18;
+package atividades.atp18;
 /**
  * Atividade Prática 18 - Orientação a Objetos
  * 1. Crie uma classe Tela Principal Banco que contenha um método main. Nesta classe: 

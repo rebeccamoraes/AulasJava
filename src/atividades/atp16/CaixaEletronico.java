@@ -1,4 +1,4 @@
-package atp16;
+package atividades.atp16;
 
 public class CaixaEletronico {
     public static void main(String[] args) {

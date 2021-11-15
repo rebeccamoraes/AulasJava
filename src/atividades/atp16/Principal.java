@@ -1,4 +1,4 @@
-package atp16;
+package atividades.atp16;
 
 import java.util.Scanner;
 

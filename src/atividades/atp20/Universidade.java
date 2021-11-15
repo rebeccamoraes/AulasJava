@@ -1,4 +1,4 @@
-package atp20;
+package atividades.atp20;
 
 /**
  * Atividade Prática 20 - Herança

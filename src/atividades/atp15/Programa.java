@@ -1,4 +1,4 @@
-package atp15;
+package atividades.atp15;
 
 class Programa {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package atp19;
+package atividades.atp19;
 
 import java.util.Scanner;
 

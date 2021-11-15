@@ -1,4 +1,4 @@
-package atp17;
+package atividades.atp17;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package atp20;
+package atividades.atp20;
 
 public class Pessoa {
     private String nome;

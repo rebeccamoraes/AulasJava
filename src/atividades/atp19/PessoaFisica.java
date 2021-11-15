@@ -1,4 +1,4 @@
-package atp19;
+package atividades.atp19;
 
 /**
  * Atividade Prática 19 - Arrays

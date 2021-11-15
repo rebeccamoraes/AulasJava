@@ -1,4 +1,4 @@
-package atp20;
+package atividades.atp20;
 
 public class Funcionario extends Pessoa {
     private double salario;
