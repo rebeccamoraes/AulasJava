@@ -14,9 +14,10 @@ public class View4Delete {
             
             Connection conn = DriverManager.getConnection(url, user, password);
 
-            String sql = "DELETE FROM categoria WHERE id IN(SELECT id FROM categoria ORDER BY id DESC LIMIT 2)";
+            String sql = "DELETE FROM categoria WHERE id = ?";
             PreparedStatement pStatement = conn.prepareStatement(sql);
-            
+            int id = 18;
+            pStatement.setInt(1, id);
             pStatement.execute();
 
             int linhasAfetadas = pStatement.getUpdateCount();

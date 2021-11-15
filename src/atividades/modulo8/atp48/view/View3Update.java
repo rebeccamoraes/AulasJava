@@ -14,10 +14,12 @@ public class View3Update {
             
             Connection conn = DriverManager.getConnection(url, user, password);
 
-            String sql = "UPDATE categoria SET nome=? WHERE id IN (SELECT id FROM categoria ORDER BY id ASC LIMIT 2)";
+            String sql = "UPDATE categoria SET nome= ? WHERE nome = ?";
             PreparedStatement pStatement = conn.prepareStatement(sql);
-
-            pStatement.setString(1, "Top 2");
+            String nomeAntigo = "Alimentos";
+            String nomeNovo = "Comidas";
+            pStatement.setString(1, nomeNovo);
+            pStatement.setString(2, nomeAntigo);
             pStatement.execute();
 
             int linhasAfetadas = pStatement.getUpdateCount();
