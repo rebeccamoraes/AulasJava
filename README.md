@@ -5,7 +5,9 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
-| 12/11/2021 | PreparedStatement |[Atividade Prática 48](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp48)
+| 12/11/2021 | Pool de Conexões | [Atividade Prática 50](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp50) |
+| 12/11/2021 | Design Patern Factory | [Atividade Prática 49](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp49) |
+| 12/11/2021 | PreparedStatement | [Atividade Prática 48](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp48) |
 | 11/11/2021 | Biblioteca JDBC | [Atividade Prática 46](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp46) e [Atividade Prática 47](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp47)|
 | 03/11/2021 | Java.io, leitura e escrita de arquivos | [Atividade Prática 38](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp38) |
 | 03/11/2021 | Revisão | [Atividade Prática 37](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/atp37) |
