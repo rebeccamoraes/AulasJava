@@ -1,26 +1,17 @@
 package atividades.modulo8.atp51.view;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
-import atividades.modulo8.atp49.utils.ConnectionFactory;
+import atividades.modulo8.atp51.dao.CategoriaDAO;
+import atividades.modulo8.atp51.model.Categoria;
 
 public class View4Delete {
     public static void main(String[] args) {
-        try (Connection conn = new ConnectionFactory().getConnection()) {
-            String sql = "DELETE FROM categoria WHERE id = ?";
-            PreparedStatement pStatement = conn.prepareStatement(sql);
-            int id = 20;
-            pStatement.setInt(1, id);
-            pStatement.execute();
+        CategoriaDAO dao = new CategoriaDAO();
+        Categoria categoria = new Categoria();
 
-            int linhasAfetadas = pStatement.getUpdateCount();
-            System.out.println(linhasAfetadas);
+        categoria.setId(25);
 
-            conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        int linhas = dao.delete(categoria);
+        
+        System.out.println("Linhas atualizadas: " + linhas);
     }
 }

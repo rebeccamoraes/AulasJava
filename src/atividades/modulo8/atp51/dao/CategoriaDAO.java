@@ -98,8 +98,25 @@ public class CategoriaDAO {
         return linhasAfetadas;
     }
 
-    public void delete() {
+    /**
+     * Exclui uma categoria
+     * 
+     * @param categoria
+     */
+    public int delete(Categoria categoria) {
+        int linhasAfetadas = 0;
+        try (Connection conn = new ConnectionFactory().getConnection()) {
+            String sql = "DELETE FROM categoria WHERE id = ?";
+            PreparedStatement pStatement = conn.prepareStatement(sql);
 
+            pStatement.setInt(1, categoria.getId());
+            pStatement.execute();
+
+            linhasAfetadas = pStatement.getUpdateCount();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return linhasAfetadas;
     }
 
 }
