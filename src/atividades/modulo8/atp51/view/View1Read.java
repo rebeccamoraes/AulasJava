@@ -1,34 +1,14 @@
 package atividades.modulo8.atp51.view;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import aulas.modulo7.aula47.utils.ConnectionFactory;
+import atividades.modulo8.atp51.model.Categoria;
+import atividades.modulo8.atp51.dao.CategoriaDAO;
 
 public class View1Read {
     public static void main(String[] args) {
-        try (Connection conn = new ConnectionFactory().getConnection()) {
-            String sql = "SELECT id, nome FROM categoria";
+        CategoriaDAO dao = new CategoriaDAO();
 
-            PreparedStatement pStatement = conn.prepareStatement(sql);
-
-            pStatement.execute();
-
-            ResultSet result = pStatement.getResultSet();
-
-            while (result.next()) {
-                int id = result.getInt("id");
-                String nome = result.getString("nome");
-
-                System.out.println("---");
-                System.out.printf("Id: %d\nNome: %s\n", id, nome);
-            }
-            
-            conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        for (Categoria categoria : dao.read()) {
+            System.out.println(categoria);
         }
     }
 }
