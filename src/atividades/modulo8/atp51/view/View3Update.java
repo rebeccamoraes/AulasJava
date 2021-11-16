@@ -1,28 +1,19 @@
 package atividades.modulo8.atp51.view;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
-import atividades.modulo8.atp49.utils.ConnectionFactory;
+import atividades.modulo8.atp51.dao.CategoriaDAO;
+import atividades.modulo8.atp51.model.Categoria;
 
 public class View3Update {
     public static void main(String[] args) {
-        try (Connection conn = new ConnectionFactory().getConnection()) {
-            String sql = "UPDATE categoria SET nome= ? WHERE nome = ?";
-            PreparedStatement pStatement = conn.prepareStatement(sql);
-            String nomeAntigo = "Alimentos";
-            String nomeNovo = "Comidas";
-            pStatement.setString(1, nomeNovo);
-            pStatement.setString(2, nomeAntigo);
-            pStatement.execute();
+        CategoriaDAO dao = new CategoriaDAO();
+        Categoria categoria = new Categoria();
 
-            int linhasAfetadas = pStatement.getUpdateCount();
-            System.out.println(linhasAfetadas);
+        categoria.setId(24);
+        categoria.setNome("Telefonia");
+        categoria.setDescricao("Smartphones e celulares antigos.");
 
-            conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        int linhas = dao.update(categoria);
+        
+        System.out.println("Linhas atualizadas: " + linhas);
     }
 }

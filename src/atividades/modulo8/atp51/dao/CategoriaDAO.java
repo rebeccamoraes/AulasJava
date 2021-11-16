@@ -73,8 +73,29 @@ public class CategoriaDAO {
         return list;
     }
 
-    public void update() {
+/**
+ * Atualiza dados de uma categoria
+ * 
+ * @param categoria Categoria a ser atualizada
+ */
+    public int update(Categoria categoria) {
+        int linhasAfetadas = 0;
 
+        try (Connection conn = new ConnectionFactory().getConnection()) {
+            String sql = "UPDATE categoria SET nome = ?, descricao = ? WHERE id = ?";
+            PreparedStatement pStatement = conn.prepareStatement(sql);
+
+            pStatement.setString(1, categoria.getNome());
+            pStatement.setString(2, categoria.getDescricao());
+            pStatement.setInt(3, categoria.getId());
+            pStatement.execute();
+
+            linhasAfetadas = pStatement.getUpdateCount();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return linhasAfetadas;
     }
 
     public void delete() {
