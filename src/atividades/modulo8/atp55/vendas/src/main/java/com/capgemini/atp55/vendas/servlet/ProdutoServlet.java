@@ -1,3 +1,5 @@
+package com.capgemini.atp55.vendas.servlet;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
