@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Categorias</title>
+        <title>Categorias e Produtos</title>
     </head>
     <body>
-        <h2>Hello World!</h2>
-        <a href="/vendas/categorias">Categorias</a>
-        <a href="/vendas/produtos">Produtos</a>
+        <h2>Categorias e Produtos</h2>
+        <a href="/vendas-1/categoria.jsp">Categorias</a>
+        <a href="/vendas-1/produto.jsp">Produtos</a>
     </body>
 </html>
