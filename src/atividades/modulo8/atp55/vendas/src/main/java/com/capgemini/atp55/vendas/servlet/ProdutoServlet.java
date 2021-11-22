@@ -26,7 +26,7 @@ public class ProdutoServlet extends HttpServlet {
 
         
         if(id != null) {
-            produto.setIdCategoria(Integer.parseInt(id));
+            produto.setId(Integer.parseInt(id));
         }
         if(valor != null) {
             produto.setValor(Float.parseFloat(valor));
