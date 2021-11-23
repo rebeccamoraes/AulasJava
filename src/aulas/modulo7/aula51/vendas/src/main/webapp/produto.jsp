@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Produto</title>
 </head>
 <body>
-    <form action="/vendas-1/produto">
+    <form action="/vendas-1/produto" method="post">
         Id: <input type="number" name="id" id="id" /> <br />
         Nome: <input type="text" name="nome" id="nome" /> <br />
         Valor: <input type="number" name="valor" id="valor" /> <br />

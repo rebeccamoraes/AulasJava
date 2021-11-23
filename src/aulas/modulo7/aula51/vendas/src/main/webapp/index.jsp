@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <title>Categorias e Produtos</title>
     </head>
