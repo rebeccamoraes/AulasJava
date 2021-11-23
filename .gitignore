@@ -1,4 +1,7 @@
+\target
+.vscode
 .idea
+.settings
 out
 # Compiled class file
 *.class
