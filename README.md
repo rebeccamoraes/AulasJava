@@ -6,7 +6,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 | Data | Assunto | Produtos |
 | --- | --- | --- |
 | 22/11/2021 | Servlets, Models e forms | [Atividade Prática 54](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp54) e [Atividade Prática 55](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp55) |
-| 22/11/2021 | Maven e Eclipse | [Atividade Prática 53](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp53) |
+| 22/11/2021 | Java Web | [Atividade Prática 53](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp53) |
 | 18/11/2021 | Maven e Eclipse | [Atividade Prática 52](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp52) |
 | 16/11/2021 | DAO | [Atividade Prática 51](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp51) |
 | 12/11/2021 | Pool de Conexões | [Atividade Prática 50](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp50) |
