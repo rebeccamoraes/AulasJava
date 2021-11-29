@@ -7,6 +7,7 @@
     <title>Vendas</title>
 </head>
 <body>
-    
+    <h1>Categorias</h1>
+    <a href="/vendas-1/categoria/listar">Listar categorias</a>
 </body>
 </html>
