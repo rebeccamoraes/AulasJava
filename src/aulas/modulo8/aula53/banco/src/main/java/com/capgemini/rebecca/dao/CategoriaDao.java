@@ -25,7 +25,7 @@ public class CategoriaDao {
 
     public List<Categoria> read() {
         return this.entityManager
-            .createQuery("SELECT c FROM Categoria c", Categoria.class)
+            .createQuery("SELECT c FROM Categoria c ORDER BY id ASC", Categoria.class)
             .getResultList();
     }
 
