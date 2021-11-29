@@ -1,11 +1,5 @@
 package com.capgemini.rebecca;
 
-import java.util.List;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
 import com.capgemini.rebecca.dao.CategoriaDao;
 import com.capgemini.rebecca.model.Categoria;
 
