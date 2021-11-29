@@ -7,8 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "categoria")
-public class Categoria {
+@Table(name = "conta_corrente")
+public class ContaCorrente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -34,9 +34,5 @@ public class Categoria {
         this.descricao = descricao;
     }
 
-    @Override
-    public String toString() {
-        String texto = String.format("Categoria %d: %s - %s", this.id, this.nome, this.descricao);
-        return texto;
-    }
+    
 }
