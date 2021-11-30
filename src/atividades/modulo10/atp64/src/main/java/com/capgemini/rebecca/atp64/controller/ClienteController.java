@@ -45,4 +45,10 @@ public class ClienteController {
         req.addAttribute("cliente", cliente);
         return "cliente-form";
     }
+
+    @GetMapping("/cliente/excluir/{id}")
+    public String deletar(@PathVariable int id) {
+        this.repository.deleteById(id);
+        return "redirect:/cliente/listar";
+    }
 }
