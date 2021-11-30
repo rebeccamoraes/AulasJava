@@ -1,7 +1,7 @@
 package com.capgemini.rebecca.atp62;
 
-import com.capgemini.rebecca.atp62.model.Cliente;
-import com.capgemini.rebecca.atp62.repository.ClienteRepository;
+import com.capgemini.rebecca.atp62.model.Agencia;
+import com.capgemini.rebecca.atp62.repository.AgenciaRepository;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Atp62Application implements CommandLineRunner {
-	ClienteRepository repository;
+	AgenciaRepository repository;
 
-	public Atp62Application(ClienteRepository repository) {
+	public Atp62Application(AgenciaRepository repository) {
 		this.repository = repository;
 	}
 	public static void main(String[] args) {
@@ -20,15 +20,23 @@ public class Atp62Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Cliente entity = new Cliente();
-		entity.setNome("Rebecca Moraes");
-		entity.setIdade(26);
-		entity.setCpf("123.456.789-10");
+		Agencia entity = new Agencia();
+		entity.setNome("Norte");
+		entity.setNumero(7654);
+		
+		repository.save(entity);
 
-		this.repository.save(entity);
+		repository.findAll().forEach(agencia->System.out.println(agencia));
 
-		this.repository.findAll().forEach(cliente->System.out.printf("Cliente %d: %s, %d anos, CPF %s\n", 
-		cliente.getId(), cliente.getNome(), cliente.getIdade(), cliente.getCpf()));
+		entity.setId(6);
+		entity.setNumero(1111);
+		repository.save(entity);
+
+		repository.findAll().forEach(agencia->System.out.println(agencia));
+
+		repository.delete(entity);
+
+		repository.findAll().forEach(agencia->System.out.println(agencia));
 	}
 
 }
