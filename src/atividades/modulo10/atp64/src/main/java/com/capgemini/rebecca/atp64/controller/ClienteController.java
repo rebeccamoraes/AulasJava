@@ -2,12 +2,15 @@ package com.capgemini.rebecca.atp64.controller;
 
 import java.util.List;
 
+import javax.websocket.server.PathParam;
+
 import com.capgemini.rebecca.atp64.model.Cliente;
 import com.capgemini.rebecca.atp64.repository.ClienteRepository;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
@@ -34,5 +37,12 @@ public class ClienteController {
         List<Cliente> clientes = (List<Cliente>)this.repository.findAll();
         req.addAttribute("clientes", clientes);
         return "cliente-lista";
+    }
+
+    @GetMapping("/cliente/editar/{id}")
+    public String editar(@PathVariable int id, Model req) {
+        Cliente cliente = this.repository.findById(id).get();
+        req.addAttribute("cliente", cliente);
+        return "cliente-form";
     }
 }
