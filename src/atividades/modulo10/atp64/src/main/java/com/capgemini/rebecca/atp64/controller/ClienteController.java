@@ -2,8 +2,6 @@ package com.capgemini.rebecca.atp64.controller;
 
 import java.util.List;
 
-import javax.websocket.server.PathParam;
-
 import com.capgemini.rebecca.atp64.model.Cliente;
 import com.capgemini.rebecca.atp64.repository.ClienteRepository;
 
