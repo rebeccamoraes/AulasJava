@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes</title>
+    <title>Filmes - Lista</title>
 </head>
 <body>
     <h1>Filmes</h1>
     <h2>Lista de filmes</h2>
+    <a href="/filme/form">Cadastrar novo</a> <br />
     <table>
         <thead>
             <th>ID</th>
@@ -22,6 +23,10 @@
                 <td th:text="${filme.nome}"></td>
                 <td th:text="${filme.nomeDiretor}"></td>
                 <td th:text="${filme.genero}"></td>
+                <td>
+                    <a th:href="@{'/filme/editar/'+${filme.id}}">Editar</a>
+                    <a th:href="@{'/filme/deletar/'+${filme.id}}">Deletar</a>
+                </td>
             </tr>
         </tbody>
     </table>
