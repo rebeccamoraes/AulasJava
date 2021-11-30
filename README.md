@@ -5,6 +5,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
+| 26/11/2021 | Persistência com Spring DATA | [Atividade Prática 62](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo10/atp62) e [Atividade Prática 63](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo10/atp63)|
 | 26/11/2021 | Java Web, método post e dao | [Atividade Prática 56](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp56) |
 | 22/11/2021 | Servlets, Models e forms | [Atividade Prática 54](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp54) e [Atividade Prática 55](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp55) |
 | 22/11/2021 | Java Web | [Atividade Prática 53](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo8/atp53) |
