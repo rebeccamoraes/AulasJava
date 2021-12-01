@@ -8,12 +8,21 @@
         <h1>Cadastro/Edição de cliente</h1>
         <form action="/cliente/cadastrar" method="post">
             <input type="hidden" name="id" id="id" th:value="${cliente.id}" readonly>
-            Nome: <input type="text" name="nome" id="nome" th:value="${cliente.nome}" /> <br />
-            CPF: <input type="text" name="cpf" id="cpf" th:value="${cliente.cpf}" /> <br />
-            Idade: <input type="number" name="idade" id="idade" th:value="${cliente.idade}" /> <br />
-            <input type="submit" value="Salvar" />
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" th:value="${cliente.nome}" />
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input class="form-control" type="text" name="cpf" id="cpf" th:value="${cliente.cpf}" />
+            </div>
+            <div class="mb-3">
+                <label for="idade" class="form-label">Idade:</label>
+                <input class="form-control" type="number" name="idade" id="idade" th:value="${cliente.idade}" />
+            </div>
+            <input type="submit" value="Salvar" class="btn btn-success" />
         </form>
-        <a href="/cliente/listar">Voltar</a>
+        <a href="/cliente/listar" class="btn btn-secondary">Voltar</a>
     </main>
 </body>
 </html>
