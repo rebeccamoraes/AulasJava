@@ -3,14 +3,17 @@
 <head th:replace="~{base::head('Cliente - Formulário')}"></head>
 </head>
 <body>
-    <h1>Cadastro/Edição de cliente</h1>
-    <form action="/cliente/cadastrar" method="post">
-        <input type="hidden" name="id" id="id" th:value="${cliente.id}" readonly>
-        Nome: <input type="text" name="nome" id="nome" th:value="${cliente.nome}" /> <br />
-        CPF: <input type="text" name="cpf" id="cpf" th:value="${cliente.cpf}" /> <br />
-        Idade: <input type="number" name="idade" id="idade" th:value="${cliente.idade}" /> <br />
-        <input type="submit" value="Salvar" />
-    </form>
-    <a href="/cliente/listar">Voltar</a>
+    <header th:replace="~{base::header}"></header>
+    <main>
+        <h1>Cadastro/Edição de cliente</h1>
+        <form action="/cliente/cadastrar" method="post">
+            <input type="hidden" name="id" id="id" th:value="${cliente.id}" readonly>
+            Nome: <input type="text" name="nome" id="nome" th:value="${cliente.nome}" /> <br />
+            CPF: <input type="text" name="cpf" id="cpf" th:value="${cliente.cpf}" /> <br />
+            Idade: <input type="number" name="idade" id="idade" th:value="${cliente.idade}" /> <br />
+            <input type="submit" value="Salvar" />
+        </form>
+        <a href="/cliente/listar">Voltar</a>
+    </main>
 </body>
 </html>

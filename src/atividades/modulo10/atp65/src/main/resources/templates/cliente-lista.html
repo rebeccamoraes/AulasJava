@@ -2,28 +2,31 @@
 <html lang="pt-br">
 <head th:replace="~{base::head('Clientes - Lista')}"></head>
 <body>
-    <h1>Lista de clientes</h1>
-    <a href="/cliente/cadastrar">Cadastrar</a>
-    <table>
-        <thead>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>CPF</th>
-            <th>Idade</th>
-            <th></th>
-        </thead>
-        <tbody>
-            <tr th:each="cliente: ${clientes}">
-                <td th:text="${cliente.id}"></td>
-                <td th:text="${cliente.nome}"></td>
-                <td th:text="${cliente.cpf}"></td>
-                <td th:text="${cliente.idade}"></td>
-                <td>
-                    <a th:href="@{'/cliente/editar/'+${cliente.id}}">Editar</a>
-                    <a th:href="@{'/cliente/excluir/'+${cliente.id}}">Excluir</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <header th:replace="~{base::header}"></header>
+    <main>
+        <h1>Lista de clientes</h1>
+        <a href="/cliente/cadastrar">Cadastrar</a>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Idade</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr th:each="cliente: ${clientes}">
+                    <td th:text="${cliente.id}"></td>
+                    <td th:text="${cliente.nome}"></td>
+                    <td th:text="${cliente.cpf}"></td>
+                    <td th:text="${cliente.idade}"></td>
+                    <td>
+                        <a th:href="@{'/cliente/editar/'+${cliente.id}}">Editar</a>
+                        <a th:href="@{'/cliente/excluir/'+${cliente.id}}">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
