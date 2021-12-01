@@ -20,7 +20,9 @@ public class ClienteController {
     }
 
     @GetMapping("/cliente/cadastrar")
-    public String cadastrar() {
+    public String cadastrar(Model req) {
+        Cliente cliente = new Cliente();
+        req.addAttribute("cliente", cliente);
         return "cliente-form";
     }
 
