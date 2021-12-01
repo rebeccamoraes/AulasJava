@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Formulário</title>
+</head>
+<body>
+    <h1>Cadastro/Edição de cliente</h1>
+    <form action="/cliente/cadastrar" method="post">
+        <input type="hidden" name="id" id="id" th:value="${cliente.id}" readonly>
+        Nome: <input type="text" name="nome" id="nome" th:value="${cliente.nome}" /> <br />
+        CPF: <input type="text" name="cpf" id="cpf" th:value="${cliente.cpf}" /> <br />
+        Idade: <input type="number" name="idade" id="idade" th:value="${cliente.idade}" /> <br />
+        <input type="submit" value="Salvar" />
+    </form>
+    <a href="/cliente/listar">Voltar</a>
+</body>
+</html>
