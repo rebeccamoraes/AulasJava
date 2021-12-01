@@ -1,0 +1,14 @@
+main {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.esquerda {
+    float: left;
+    margin-bottom: 1em;
+}
+
+form {
+    text-align: left;
+}
