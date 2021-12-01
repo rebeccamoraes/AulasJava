@@ -22,9 +22,11 @@ public class FilmeAPI {
     FilmeRepository repository;
 
     @GetMapping
-    public List<Filme> filmes() {
-        List<Filme> lista = (List<Filme>)repository.findAll();
-        return lista;
+    public List<Filme> filmes(String nome) {
+        if(nome != null) {
+            return (List<Filme>)repository.findByNome(nome);
+        } 
+        return (List<Filme>)repository.findAll();
     }
 
     @PostMapping

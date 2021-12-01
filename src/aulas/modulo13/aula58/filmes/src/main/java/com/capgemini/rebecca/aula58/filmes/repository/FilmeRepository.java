@@ -1,5 +1,7 @@
 package com.capgemini.rebecca.aula58.filmes.repository;
 
+import java.util.List;
+
 import com.capgemini.rebecca.aula58.filmes.model.Filme;
 
 import org.springframework.data.domain.Sort;
@@ -10,4 +12,6 @@ public interface FilmeRepository extends PagingAndSortingRepository<Filme, Integ
     default Iterable<Filme> findAll() {
         return findAll(Sort.by(Sort.Direction.ASC, "id"));
     }
+
+    List<Filme> findByNome(String nome);
 }
