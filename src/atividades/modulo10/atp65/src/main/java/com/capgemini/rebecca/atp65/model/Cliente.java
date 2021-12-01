@@ -1,4 +1,4 @@
-package com.capgemini.rebecca.atp64.model;
+package com.capgemini.rebecca.atp65.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

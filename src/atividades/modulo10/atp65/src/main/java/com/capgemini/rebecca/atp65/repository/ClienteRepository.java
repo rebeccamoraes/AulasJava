@@ -1,6 +1,6 @@
-package com.capgemini.rebecca.atp64.repository;
+package com.capgemini.rebecca.atp65.repository;
 
-import com.capgemini.rebecca.atp64.model.Cliente;
+import com.capgemini.rebecca.atp65.model.Cliente;
 
 import org.springframework.data.repository.CrudRepository;
 

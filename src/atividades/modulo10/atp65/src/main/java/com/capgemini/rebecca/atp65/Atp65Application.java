@@ -1,13 +1,13 @@
-package com.capgemini.rebecca.atp64;
+package com.capgemini.rebecca.atp65;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Atp64Application {
+public class Atp65Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Atp64Application.class, args);
+		SpringApplication.run(Atp65Application.class, args);
 	}
 
 }

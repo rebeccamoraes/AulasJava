@@ -1,9 +1,9 @@
-package com.capgemini.rebecca.atp64.controller;
+package com.capgemini.rebecca.atp65.controller;
 
 import java.util.List;
 
-import com.capgemini.rebecca.atp64.model.Cliente;
-import com.capgemini.rebecca.atp64.repository.ClienteRepository;
+import com.capgemini.rebecca.atp65.model.Cliente;
+import com.capgemini.rebecca.atp65.repository.ClienteRepository;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
