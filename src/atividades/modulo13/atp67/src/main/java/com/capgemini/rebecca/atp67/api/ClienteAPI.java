@@ -27,7 +27,7 @@ public class ClienteAPI {
     }
 
     @GetMapping("/api/cliente")
-    public List<Cliente> read(@RequestParam String nome) {
+    public List<Cliente> read(@RequestParam(required = false) String nome) {
         List<Cliente> clientes;
         if(nome != null) {
             clientes = (List<Cliente>) this.repository.findByNome(nome);
