@@ -1,8 +1,6 @@
-# Atividade Prática 66 - Spring, Thymeleaf, Bootstrap e API REST
+# Atividade Prática 67 - Spring, Thymeleaf, Bootstrap e API REST
 
 ## Requisitos/Instruções
-1. Utilize como base o código gerado na ATP65.
-2. Adicione uma camada para armazenar os endpoint rest, chamada api.
-3. Crie uma controller rest para clientes.
-4. Crie os 4 métodos para tratar todas as operações de CRUD. Os métodos devem responder a uma única url, que deve ser precedida por /api.
-5. Teste as operações de crud com o aplicativo Insomnia.
+1. Utilize como base o código gerado na ATP66.
+2. Modifique o método de listagem de clientes para que retorne todos os clientes ordenados por id em ordem crescente.
+3. Altere o método de listagem de clientes para que seja possivel filtrar os clientes pelo nome.
