@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -26,8 +27,13 @@ public class ClienteAPI {
     }
 
     @GetMapping("/api/cliente")
-    public List<Cliente> read() {
-        List<Cliente> clientes = (List<Cliente>)this.repository.findAll();
+    public List<Cliente> read(@RequestParam String nome) {
+        List<Cliente> clientes;
+        if(nome != null) {
+            clientes = (List<Cliente>) this.repository.findByNome(nome);
+        } else {
+            clientes = (List<Cliente>)this.repository.findAll();
+        }
         return clientes;
     }
 

@@ -1,5 +1,7 @@
 package com.capgemini.rebecca.atp67.repository;
 
+import java.util.List;
+
 import com.capgemini.rebecca.atp67.model.Cliente;
 
 import org.springframework.data.domain.Sort;
@@ -10,4 +12,6 @@ public interface ClienteRepository extends PagingAndSortingRepository<Cliente, I
     default Iterable<Cliente> findAll() {
         return findAll(Sort.by(Sort.Direction.ASC, "id"));
     }
+
+    List<Cliente> findByNome(String nome);
 }
