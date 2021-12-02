@@ -1,4 +1,4 @@
-# Atividade Prática 67 - Spring, Thymeleaf, Bootstrap e API REST
+# Atividade Prática 67 - Spring, API REST, ordenação e filtros
 
 ## Requisitos/Instruções
 1. Utilize como base o código gerado na ATP66.
