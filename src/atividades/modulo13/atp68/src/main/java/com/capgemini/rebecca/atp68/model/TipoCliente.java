@@ -18,5 +18,5 @@ public class TipoCliente {
     private int id;
 
     @Getter @Setter
-    private int nome;
+    private String nome;
 }
