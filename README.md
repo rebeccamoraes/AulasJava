@@ -5,6 +5,7 @@ Professor: [Maykon Granemann](https://github.com/maykondgranemann)
 
 | Data | Assunto | Produtos |
 | --- | --- | --- |
+| 01/11/2021 | Spring, Thymeleaf, Bootstrap e API REST | [Atividade Prática 68](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo13/atp68) |
 | 01/11/2021 | Spring, API REST, ordenação e filtros | [Atividade Prática 67](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo13/atp67) |
 | 30/11/2021 | API Rest com Spring | [Atividade Prática 66](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo13/atp66) |
 | 29/11/2021 | Spring, Thymeleaf e Bootstrap | [Atividade Prática 65](https://github.com/rebeccamoraes/AulasJava/tree/main/src/atividades/modulo10/atp65) |
